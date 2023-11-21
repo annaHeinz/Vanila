@@ -10,19 +10,20 @@
 <body style="background-image: radial-gradient(circle, #c71585, #8b008b);">
     <h2>Список задач</h2>
     <form id="input-form">
-        <input type="text">
-        <button type="submit">Добавить</button>
-        <select name="" id="">
+        <input type="text" id="taskinput">
+        <button type="submit" class="addTask">Добавить</button>
+        <select name="task" id="task-select">
             <option value="all" selected>Все</option>
             <option value="done" selected>Выполненные</option>
             <option value="undone" selected>Невыполненные</option>
         </select>
     </form>
-  <form action="">
-
+  <form action="" id="test">
+    <div id="allTask"></div>
   </form>
     <h2>Пользователи</h2>
-    <form action=""><button type="submit">Получить случайных пользователей</button></form>
+    <form action=""><button id="fetchUser" type="submit">Получить случайных пользователей</button></form>
     <div id="randomUser"></div>
+
 </body>
 </html>
